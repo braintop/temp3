@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 40rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        line-height: 1.6;
+      }
+      #stats {
+        margin-top: 1rem;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello World</p>
+    <p id="stats"></p>
+    <script>
+      function countElements() {
+        return document.getElementsByTagName("*").length;
+      }
+      document.getElementById("stats").textContent =
+        "מספר האלמנטים בדף (בכל ה-DOM): " + countElements();
+    </script>
+  </body>
+</html>
